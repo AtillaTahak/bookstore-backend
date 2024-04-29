@@ -25,7 +25,6 @@
 
 - [Overview](#overview)
   - [Built With](#built-with)
-- [Features](#features)
 - [How to use](#how-to-use)
 - [Swagger](#swagger)
 - [How To Use with Docker](#how-to-use-with-docker)
@@ -70,10 +69,6 @@ Database:
 - [Postgresql](https://www.postgresql.org)
 - [Docker](https://www.docker.com)
 - [Swagger](https://swagger.io)
-
-## Features
-
-
 
 ## How To Use
 
