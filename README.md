@@ -48,9 +48,10 @@ User Role:
 
 Store Manager Role:
 
-	-Can add or remove a specific quantity of a book to/from a store (from the Book table)
+	- Can add or remove a specific quantity of a book to/from a store (from the Book table)
 
 Admin Role:
+
 	- Can create a new bookstore
 	- Can add a new book
 	- Can add or remove a specific quantity of a particular book to/from a specific bookstore
@@ -58,7 +59,7 @@ Admin Role:
 
 Database:
 
-The application utilizes PostgreSQL to efficiently store and manage bookstores, books, and inventory levels.
+ 	- The application utilizes PostgreSQL to efficiently store and manage bookstores, books, and inventory levels.
 
 ### Built With
 
@@ -107,7 +108,7 @@ http://localhost:3000/api
 
 <!-- Example: -->
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. Also you need use for [Docker](https://www.docker.com/#build) From your command line:
 
 ```bash
 # Clone this repository
@@ -133,7 +134,7 @@ http://localhost:5050
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example -->
 
-- [NestJs] (https://nestjs.com)
+- [NestJs](https://nestjs.com)
 
 
 ## Contact
@@ -141,6 +142,6 @@ http://localhost:5050
 - GitHub: [@AtillaTahak](https://github.com/AtillaTahak)
 - Twitter: [@AtillaTahaa](https://twitter.com/AtillaTahaa)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/atillatahakordugum)
-- Blog: [Blog](atillataha.blogspot.com)
+- Blog: [Blog](https://atillataha.blogspot.com)
 - Youtube: [YouTube](https://www.youtube.com/channel/UCmoD0x4Z9vdG2PCsI5p8FYg)
 - Portfolio: [Portfolio](atillataha.netlify.app)
