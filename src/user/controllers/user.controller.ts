@@ -53,8 +53,9 @@ export class UserController {
   }
 
   @Post()
-  @Public()
   @ApiTags('user')
+  @Roles(Role.Admin)
+  @ApiBearerAuth()
   @ApiOperation({
     summary: 'Create a new user',
     description: 'Create a new user.',
@@ -70,6 +71,7 @@ export class UserController {
     description: 'Retrieve a list of all users.',
   })
   @ApiTags('user')
+  @Roles(Role.Admin, Role.Manager, Role.User)
   @ApiBearerAuth()
   @ApiResponse({ status: 403, description: 'Forbidden.' })
   findAll() {

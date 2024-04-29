@@ -15,7 +15,13 @@ export class UserService {
     private readonly jwtService: JwtService,
   ) {}
 
-  async create(createUserDto: CreateUserDto): Promise<User> {
+  async create(
+    createUserDto: CreateUserDto,
+  ): Promise<User | { message: string }> {
+    const user = await this.repo.findOneBy({ email: createUserDto.email });
+    if (user) {
+      return { message: 'User already exists' };
+    }
     const item: User = new User();
     item.name = createUserDto.name;
     item.email = createUserDto.email;
@@ -53,7 +59,6 @@ export class UserService {
   }
 
   async validateUser(email: string, password: string): Promise<any> {
-    // TODO - Implement the validateUser method
     if (email === undefined || password === undefined) {
       return new UnauthorizedException();
     }

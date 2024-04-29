@@ -27,6 +27,8 @@
   - [Built With](#built-with)
 - [Features](#features)
 - [How to use](#how-to-use)
+- [Swagger](#swagger)
+- [How To Use with Docker](#how-to-use-with-docker)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
 
@@ -34,26 +36,27 @@
 
 ## Overview
 
-![screenshot](Screenshot_6.jpg)
-![screenshot](Screenshot_7.jpg)
+![screenshot](Screenshot_6.png)
+![screenshot](Screenshot_7.png)
 
 This project focuses on the backend development of a Book Store Management application using NestJS and PostgreSQL. It encompasses three user roles: User, Store Manager, and Admin.
 
 User Role:
 
-	Ability to view all bookstores
-	Can view books available in each store and search for book availability across stores
+	- Ability to view all bookstores
+	- Can view books available in each store and search for book availability across stores
 
 Store Manager Role:
 
-	Can add or remove a specific quantity of a book to/from a store (from the Book table)
+	-Can add or remove a specific quantity of a book to/from a store (from the Book table)
 
 Admin Role:
-	Can create a new bookstore
-	Can add a new book
-	Can add or remove a specific quantity of a particular book to/from a specific bookstore
-	Adding new users and roles can only be done by the Admin
-	Database:
+	- Can create a new bookstore
+	- Can add a new book
+	- Can add or remove a specific quantity of a particular book to/from a specific bookstore
+	- Adding new users and roles can only be done by the Admin
+
+Database:
 
 The application utilizes PostgreSQL to efficiently store and manage bookstores, books, and inventory levels.
 
@@ -65,6 +68,7 @@ The application utilizes PostgreSQL to efficiently store and manage bookstores, 
 - [NestJs](https://nestjs.com)
 - [Postgresql](https://www.postgresql.org)
 - [Docker](https://www.docker.com)
+- [Swagger](https://swagger.io)
 
 ## Features
 
@@ -88,6 +92,42 @@ $ npm install
 
 $ npm run start:dev
 ```
+
+You can create seed user with [api](http://localhost:3000/user/seed)
+
+## Swagger
+
+Access the API documentation using Swagger UI:
+
+http://localhost:3000/api
+
+
+
+## How To Use with Docker
+
+<!-- Example: -->
+
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/AtillaTahak/bookstore-backend
+
+$ cd bookstore-backend
+
+$ cp .env.example .env
+
+$ npm install
+
+$ docker compose up --build
+```
+Access the API documentation using Swagger UI:
+
+http://localhost:3000/api
+
+Access pgAdmin for managing PostgreSQL databases:
+
+http://localhost:5050
 
 ## Acknowledgements
 
